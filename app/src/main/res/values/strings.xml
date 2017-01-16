@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Blend</string>
+    <string name="edit_message">Enter IBM Id</string>
+    <string name="edit_message1">Enter Password</string>
+    <string name="login">Login</string>
+
+</resources>
