@@ -4,4 +4,18 @@
     <string name="edit_message1">Enter Password</string>
     <string name="login">Login</string>
 
+    <string name="title_events">Events</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_ping">Ping</string>
+    <string name="title_rolln">Roll'n</string>
+
+    <string name="hint_search_events">Search for events</string>
+
+    <string name="day_monday">Monday</string>
+    <string name="day_tuesday">Tuesday</string>
+    <string name="day_wednesday">Wednesday</string>
+    <string name="day_thursday">Thursday</string>
+    <string name="day_friday">Friday</string>
+    <string name="day_saturday">Saturday</string>
+    <string name="day_sunday">Sunday</string>
 </resources>
