@@ -19,6 +19,9 @@ public class LoginActivity extends AppCompatActivity {
 
     private Button loginButton;
 
+    /**
+     * Common click handler so that onClick code doesn't spread everywhere like it usually does.
+     */
     private final View.OnClickListener commonClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -74,6 +77,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void displayMessage(@StringRes Integer message, boolean isLongToast) {
+        // Snackbars, because Toast messages are ancient!
         Snackbar.make(loginButton, message, isLongToast ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT)
                 .show();
     }
