@@ -1,5 +1,6 @@
 <?xml version = "1.0" encoding = "utf-8"?>
-<RelativeLayout
+
+<android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,72 +11,79 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".LoginActivity">
 
-    <EditText
-        android:id="@+id/input_ibm_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/image_blend_logo"
-        android:layout_marginTop="46dp"
-        android:hint="@string/hint_enter_ibm_id" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/input_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/input_ibm_id"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/input_ibm_id"
-        android:layout_below="@+id/input_ibm_id"
-        android:hint="@string/hint_enter_password"
-        android:inputType="textPassword" />
+        <EditText
+            android:id="@+id/input_ibm_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/image_blend_logo"
+            android:layout_marginTop="46dp"
+            android:hint="@string/hint_enter_ibm_id" />
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/input_ibm_id"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/input_ibm_id"
+            android:layout_below="@+id/input_ibm_id"
+            android:hint="@string/hint_enter_password"
+            android:inputType="textPassword" />
 
 
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/input_password"
-        android:layout_alignRight="@id/input_password"
-        android:layout_below="@id/input_password"
-        android:text="@string/title_login" />
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/input_password"
+            android:layout_alignRight="@id/input_password"
+            android:layout_below="@id/input_password"
+            android:text="@string/title_login" />
 
-    <Button
-        android:id="@+id/button_register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/button_login"
-        android:layout_alignRight="@id/button_login"
-        android:layout_below="@id/button_login"
-        android:text="@string/title_register" />
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/button_login"
+            android:layout_alignRight="@id/button_login"
+            android:layout_below="@id/button_login"
+            android:text="@string/title_register" />
 
-    <Button
-        android:id="@+id/button_forgot_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/button_register"
-        android:layout_alignRight="@id/button_register"
-        android:layout_below="@id/button_register"
-        android:text="@string/title_forgot_password" />
+        <Button
+            android:id="@+id/button_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/button_register"
+            android:layout_alignRight="@id/button_register"
+            android:layout_below="@id/button_register"
+            android:text="@string/title_forgot_password" />
 
-    <ImageView
-        android:id="@+id/image_ibm_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/logo_ibm" />
+        <ImageView
+            android:id="@+id/image_ibm_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo_ibm" />
 
-    <ImageView
-        android:id="@+id/image_blend_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/logo_blend" />
+        <ImageView
+            android:id="@+id/image_blend_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo_blend" />
 
-</RelativeLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+

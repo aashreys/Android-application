@@ -7,6 +7,11 @@
     <string name="hint_enter_ibm_id">Enter IBM ID</string>
     <string name="hint_enter_password">Enter Password</string>
 
+    <string name="error_incorrect_password">Please enter correct IBM ID</string>
+    <string name="error_incorrect_ibm_id">Please enter correct password</string>
+    <string name="error_incorrect_ibm_id_and_password">Please enter correct IBM ID and
+        password</string>
+
     <string name="title_login">Login</string>
     <string name="title_register">Register</string>
     <string name="title_forgot_password">Forgot Password</string>
@@ -14,7 +19,7 @@
     <string name="title_events">Events</string>
     <string name="title_profile">Profile</string>
     <string name="title_ping">Ping</string>
-    <string name="title_rolln">Roll'n</string>
+    <string name="title_rolln">Roll\'n</string>
 
     <string name="hint_search_events">Search for events</string>
 
