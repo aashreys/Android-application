@@ -3,7 +3,7 @@ package com.example.vivian.capstone_test.domain;
 import android.support.annotation.NonNull;
 
 /**
- * Represents IBM ID.
+ * Represents an IBM ID.
  * @see Value
  *
  * Created by aashreys on 20/01/17.
