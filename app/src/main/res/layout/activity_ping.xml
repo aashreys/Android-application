@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_ping"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vivian.capstone_test.PingActivity">
+
+    <include layout="@layout/button_bar" />
+
+    <TextView
+        android:id="@+id/title_ping"
+        style="@style/BlendTheme.PageHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/activity_page_heading_margin"
+        android:layout_marginTop="@dimen/activity_page_heading_margin"
+        android:text="@string/title_ping" />
+
+    <EditText
+        android:id="@+id/input_ibmer_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_ping"
+        android:layout_marginLeft="@dimen/activity_content_margin_left"
+        android:layout_marginRight="@dimen/activity_content_margin_right"
+        android:hint="@string/input_hint_search_ibmers" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_ibmer_search"
+        android:layout_marginLeft="@dimen/activity_content_margin_left"
+        android:layout_marginRight="@dimen/activity_content_margin_right"
+        android:clipToPadding="false"
+        android:paddingLeft="@dimen/activity_ping_content_left_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_ping_content_vertical_margin"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/activity_ping_photo_size"
+                    android:layout_height="@dimen/activity_ping_photo_size"
+                    android:layout_marginRight="@dimen/activity_ping_content_horizontal_margin"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_ping_content_horizontal_margin"
+                    android:text="@string/title_name_placeholder" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_ping_content_vertical_margin"
+                android:layout_marginTop="@dimen/activity_ping_content_vertical_margin"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/activity_ping_photo_size"
+                    android:layout_height="@dimen/activity_ping_photo_size"
+                    android:layout_marginRight="@dimen/activity_ping_content_horizontal_margin"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_ping_content_horizontal_margin"
+                    android:text="@string/title_name_placeholder" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_ping_content_vertical_margin"
+                android:layout_marginTop="@dimen/activity_ping_content_vertical_margin"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/activity_ping_photo_size"
+                    android:layout_height="@dimen/activity_ping_photo_size"
+                    android:layout_marginRight="@dimen/activity_ping_content_horizontal_margin"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_ping_content_horizontal_margin"
+                    android:text="@string/title_name_placeholder" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_ping_content_vertical_margin"
+                android:layout_marginTop="@dimen/activity_ping_content_vertical_margin"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/activity_ping_photo_size"
+                    android:layout_height="@dimen/activity_ping_photo_size"
+                    android:layout_marginRight="@dimen/activity_ping_content_horizontal_margin"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_ping_content_horizontal_margin"
+                    android:text="@string/title_name_placeholder" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_ping_content_vertical_margin"
+                android:layout_marginTop="@dimen/activity_ping_content_vertical_margin"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/activity_ping_photo_size"
+                    android:layout_height="@dimen/activity_ping_photo_size"
+                    android:layout_marginRight="@dimen/activity_ping_content_horizontal_margin"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_ping_content_horizontal_margin"
+                    android:text="@string/title_name_placeholder" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_ping_content_vertical_margin"
+                android:layout_marginTop="@dimen/activity_ping_content_vertical_margin"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/activity_ping_photo_size"
+                    android:layout_height="@dimen/activity_ping_photo_size"
+                    android:layout_marginRight="@dimen/activity_ping_content_horizontal_margin"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_ping_content_horizontal_margin"
+                    android:text="@string/title_name_placeholder" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_ping_content_vertical_margin"
+                android:layout_marginTop="@dimen/activity_ping_content_vertical_margin"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/activity_ping_photo_size"
+                    android:layout_height="@dimen/activity_ping_photo_size"
+                    android:layout_marginRight="@dimen/activity_ping_content_horizontal_margin"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_ping_content_horizontal_margin"
+                    android:text="@string/title_name_placeholder" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_ping_content_vertical_margin"
+                android:layout_marginTop="@dimen/activity_ping_content_vertical_margin"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/activity_ping_photo_size"
+                    android:layout_height="@dimen/activity_ping_photo_size"
+                    android:layout_marginRight="@dimen/activity_ping_content_horizontal_margin"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_ping_content_horizontal_margin"
+                    android:text="@string/title_name_placeholder" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_ping_content_vertical_margin"
+                android:layout_marginTop="@dimen/activity_ping_content_vertical_margin"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/activity_ping_photo_size"
+                    android:layout_height="@dimen/activity_ping_photo_size"
+                    android:layout_marginRight="@dimen/activity_ping_content_horizontal_margin"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_ping_content_horizontal_margin"
+                    android:text="@string/title_name_placeholder" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

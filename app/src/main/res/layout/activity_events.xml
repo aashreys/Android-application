@@ -7,6 +7,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.vivian.capstone_test.EventsActivity">
 
+    <include layout="@layout/button_bar" />
+
     <TextView
         android:id="@+id/title_events"
         style="@style/BlendTheme.PageHeading"
@@ -25,8 +27,7 @@
         android:layout_below="@+id/title_events"
         android:layout_marginLeft="@dimen/activity_content_margin_left"
         android:layout_marginRight="@dimen/activity_content_margin_right"
-        android:hint="@string/input_hint_search_events"
-        android:paddingLeft="0dp" />
+        android:hint="@string/input_hint_search_events" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -241,7 +242,5 @@
         </LinearLayout>
 
     </ScrollView>
-
-    <include layout="@layout/button_bar" />
 
 </RelativeLayout>

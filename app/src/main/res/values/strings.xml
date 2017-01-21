@@ -9,12 +9,15 @@
     <string name="input_hint_enter_ibm_id">Enter IBM ID</string>
     <string name="input_hint_enter_password">Enter Password</string>
     <string name="input_hint_search_events">Search for events</string>
+    <string name="input_hint_search_ibmers">Search for IBMers</string>
     <string name="input_hint_name">Name</string>
     <string name="input_hint_location">Location</string>
     <string name="input_hint_email">Email</string>
     <string name="input_hint_phone">Phone</string>
     <string name="input_hint_interests">Interests</string>
     <string name="input_hint_tags">Tags</string>
+
+    <string name="title_name_placeholder">Name</string>
 
     <string name="error_incorrect_password">Please enter correct IBM ID</string>
     <string name="error_incorrect_ibm_id">Please enter correct password</string>

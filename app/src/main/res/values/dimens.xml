@@ -14,6 +14,12 @@
     <dimen name="activity_profile_content_horizontal_margin">8dp</dimen>
     <dimen name="activity_profile_content_vertical_margin">8dp</dimen>
 
+    <!-- Ping activity dimensions -->
+    <dimen name="activity_ping_photo_size">48dp</dimen>
+    <dimen name="activity_ping_content_horizontal_margin">8dp</dimen>
+    <dimen name="activity_ping_content_vertical_margin">4dp</dimen>
+    <dimen name="activity_ping_content_left_padding">24dp</dimen>
+
     <!-- Button bar dimensions -->
     <dimen name="button_bar_vertical_spacing">8dp</dimen>
     <dimen name="button_bar_text_size">12sp</dimen>

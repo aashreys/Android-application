@@ -5,7 +5,8 @@ import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 
 /**
- * A POJO for representing a single data value in our code encapsulating their validation logic.
+ * A POJO for representing a single data value in our code and encapsulating their validation
+ * logic.
  * {@link T} - data type being encapsulated
  * Created by aashreys on 20/01/17.
  */
@@ -26,6 +27,7 @@ public class Value<T> {
 
     /**
      * Implement validation logic for data here
+     *
      * @param value - value to be validated
      * @throws IncorrectValueException
      */
