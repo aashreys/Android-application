@@ -1,5 +1,6 @@
 package com.example.vivian.capstone_test;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.StringRes;
 import android.support.design.widget.Snackbar;
@@ -70,7 +71,8 @@ public class LoginActivity extends AppCompatActivity {
             e.printStackTrace();
         }
         if (errorMessage == null) {
-            // Do login
+            // Do login ideally, plugging events activity since this is a prototype.
+            startActivity(new Intent(this, EventsActivity.class));
         } else {
             displayMessage(errorMessage, false);
         }
