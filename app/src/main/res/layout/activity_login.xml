@@ -25,7 +25,7 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/image_blend_logo"
             android:layout_marginTop="46dp"
-            android:hint="@string/hint_enter_ibm_id" />
+            android:hint="@string/input_hint_enter_ibm_id" />
 
         <EditText
             android:id="@+id/input_password"
@@ -36,7 +36,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignRight="@+id/input_ibm_id"
             android:layout_below="@+id/input_ibm_id"
-            android:hint="@string/hint_enter_password"
+            android:hint="@string/input_hint_enter_password"
             android:inputType="textPassword" />
 
 

@@ -3,5 +3,17 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <dimen name="activity_events_content_margin">72dp</dimen>
+    <dimen name="activity_content_margin_right">72dp</dimen>
+    <dimen name="activity_content_margin_left">36dp</dimen>
+    <dimen name="activity_page_heading_margin">24dp</dimen>
+
+    <dimen name="activity_profile_photo_frame_size">72dp</dimen>
+
+    <dimen name="activity_profile_content_horizontal_margin">8dp</dimen>
+    <dimen name="activity_profile_content_vertical_margin">8dp</dimen>
+
+    <dimen name="button_bar_vertical_spacing">8dp</dimen>
+    <dimen name="button_bar_text_size">12sp</dimen>
+    <dimen name="button_bar_parent_vertical_padding">16dp</dimen>
+    <dimen name="button_bar_width">@dimen/activity_content_margin_right</dimen>
 </resources>
