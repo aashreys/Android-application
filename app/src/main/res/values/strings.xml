@@ -17,6 +17,7 @@
     <string name="input_hint_interests">Interests</string>
     <string name="input_hint_tags">Tags</string>
 
+
     <string name="title_name_placeholder">Name</string>
 
     <string name="error_incorrect_password">Please enter correct IBM ID</string>
@@ -32,6 +33,7 @@
     <string name="title_profile">Profile</string>
     <string name="title_ping">Ping</string>
     <string name="title_rolln">Roll\'n</string>
+    <string name="title_create_event">Create Event</string>
 
     <string name="day_monday">Monday</string>
     <string name="day_tuesday">Tuesday</string>
@@ -40,4 +42,5 @@
     <string name="day_friday">Friday</string>
     <string name="day_saturday">Saturday</string>
     <string name="day_sunday">Sunday</string>
+    <string name="title_activity_create_events">CreateEventsActivity</string>
 </resources>
