@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:id="@+id/parent_button_bar"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="@dimen/activity_content_margin_right"
     android:layout_height="match_parent"
@@ -11,6 +12,7 @@
     android:paddingTop="@dimen/button_bar_parent_vertical_padding">
     
     <Button
+        android:id="@+id/button_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/button_bar_vertical_spacing"
@@ -18,6 +20,7 @@
         android:textSize="@dimen/button_bar_text_size" />
     
     <Button
+        android:id="@+id/button_events"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/button_bar_vertical_spacing"
@@ -26,6 +29,7 @@
         android:textSize="@dimen/button_bar_text_size" />
     
     <Button
+        android:id="@+id/button_ping"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/button_bar_vertical_spacing"
@@ -34,6 +38,7 @@
         android:textSize="@dimen/button_bar_text_size" />
     
     <Button
+        android:id="@+id/button_rolln"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/button_bar_vertical_spacing"

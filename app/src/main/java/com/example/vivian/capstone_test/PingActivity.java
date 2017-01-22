@@ -9,5 +9,6 @@ public class PingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ping);
+        Utils.configureButtonBar(this);
     }
 }
