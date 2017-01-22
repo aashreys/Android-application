@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.example.vivian.capstone_test"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vivian.capstone_test">
 
     <application
         android:allowBackup="true"
@@ -15,12 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EventsActivity">
-        </activity>
-        <activity android:name=".ProfileActivity">
-        </activity>
-        <activity android:name=".PingActivity">
-        </activity>
+        <activity android:name=".EventsActivity"></activity>
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".PingActivity"></activity>
+        <activity
+            android:name=".CreateEventsActivity"
+            android:label="@string/title_activity_create_events"
+            android:theme="@style/BlendTheme"></activity>
     </application>
 
 </manifest>
