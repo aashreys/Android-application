@@ -25,5 +25,4 @@
     <dimen name="button_bar_text_size">12sp</dimen>
     <dimen name="button_bar_parent_vertical_padding">16dp</dimen>
     <dimen name="button_bar_width">@dimen/activity_content_margin_right</dimen>
-    <dimen name="fab_margin">16dp</dimen>
 </resources>
