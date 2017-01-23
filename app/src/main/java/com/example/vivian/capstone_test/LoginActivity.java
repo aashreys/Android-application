@@ -34,6 +34,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        Utils.configureButtonBar(this);
 
         ibmIdInput = (EditText) findViewById(R.id.input_ibm_id);
         passwordInput = (EditText) findViewById(R.id.input_password);
