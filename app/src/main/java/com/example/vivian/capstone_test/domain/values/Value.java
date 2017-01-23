@@ -1,4 +1,4 @@
-package com.example.vivian.capstone_test.domain;
+package com.example.vivian.capstone_test.domain.values;
 
 import android.os.Build;
 import android.support.annotation.NonNull;

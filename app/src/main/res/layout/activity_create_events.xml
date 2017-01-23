@@ -38,18 +38,17 @@
                 android:layout_marginBottom="@dimen/activity_profile_content_vertical_margin"
                 android:gravity="center_vertical">
 
-
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/activity_profile_content_horizontal_margin">
-                    <!--android:paddingBottom="10dp"-->
+                    android:layout_marginBottom="@dimen/activity_profile_content_horizontal_margin">
 
                     <EditText
+                        android:id="@+id/input_event_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/title_createEvent"
-                        android:hint="Event" />
+                        android:hint="@string/input_hint_event_name"
+                        android:inputType="textPersonName" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -62,9 +61,11 @@
                 android:layout_marginTop="@dimen/activity_profile_content_vertical_margin">
 
                 <EditText
+                    android:id="@+id/input_date_time"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Date and Time" />
+                    android:hint="@string/input_hint_date_time"
+                    android:inputType="datetime" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -75,9 +76,11 @@
                 android:layout_marginTop="@dimen/activity_profile_content_vertical_margin">
 
                 <EditText
+                    android:id="@+id/input_event_location"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Event Location" />
+                    android:hint="@string/input_hint_event_location"
+                    android:inputType="text" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -88,11 +91,43 @@
                 android:layout_marginTop="@dimen/activity_profile_content_vertical_margin">
 
                 <EditText
+                    android:id="@+id/input_invitees"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Invitees" />
+                    android:hint="@string/input_hint_invitees"
+                    android:inputType="textPersonName" />
 
             </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_profile_content_vertical_margin"
+                android:text="@string/input_hint_event_type" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_profile_content_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_button_public"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_create_event_radio_button_horizontal_spacing"
+                    android:text="@string/title_event_type_public" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_private"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_create_event_radio_button_horizontal_spacing"
+                    android:text="@string/title_event_type_private" />
+
+            </RadioGroup>
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -100,33 +135,11 @@
                 android:layout_marginTop="@dimen/activity_profile_content_vertical_margin">
 
                 <EditText
+                    android:id="@+id/input_tags"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Event Type" />
-
-            </android.support.design.widget.TextInputLayout>
-            <RadioButton
-                android:text="Public"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/radioButton" />
-
-            <RadioButton
-                android:text="Private"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/radioButton2" />
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/activity_profile_content_vertical_margin"
-                android:layout_marginTop="@dimen/activity_profile_content_vertical_margin">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Tags" />
+                    android:hint="@string/input_hint_tags"
+                    android:inputType="text" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -137,9 +150,11 @@
                 android:layout_marginTop="@dimen/activity_profile_content_vertical_margin">
 
                 <EditText
+                    android:id="@+id/input_notes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Notes" />
+                    android:hint="@string/input_hint_notes"
+                    android:inputType="text" />
 
             </android.support.design.widget.TextInputLayout>
 

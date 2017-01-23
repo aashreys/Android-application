@@ -17,6 +17,14 @@
     <string name="input_hint_interests">Interests</string>
     <string name="input_hint_tags">Tags</string>
 
+    <string name="input_hint_event_name">Event Name</string>
+    <string name="input_hint_date_time">Date and Time</string>
+    <string name="input_hint_event_location">Event Location</string>
+    <string name="input_hint_event_type">Event Type</string>
+    <string name="input_hint_invitees">Invitees</string>
+    <string name="input_hint_open_or_closed">Open or Closed Event</string>
+    <string name="input_hint_notes">Notes</string>
+
 
     <string name="title_name_placeholder">Name</string>
 
@@ -24,6 +32,9 @@
     <string name="error_incorrect_ibm_id">Please enter correct password</string>
     <string name="error_incorrect_ibm_id_and_password">Please enter correct IBM ID and
         password</string>
+
+    <string name="title_event_type_public">Public</string>
+    <string name="title_event_type_private">Private</string>
 
     <string name="title_login">Login</string>
     <string name="title_register">Register</string>

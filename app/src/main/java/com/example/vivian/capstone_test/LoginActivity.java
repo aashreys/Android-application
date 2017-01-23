@@ -10,9 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.vivian.capstone_test.domain.IbmId;
-import com.example.vivian.capstone_test.domain.Password;
-import com.example.vivian.capstone_test.domain.Value;
+import com.example.vivian.capstone_test.domain.values.IbmId;
+import com.example.vivian.capstone_test.domain.values.Password;
+import com.example.vivian.capstone_test.domain.values.Value;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -59,7 +59,7 @@ public class LoginActivity extends AppCompatActivity {
         Password password;
         @StringRes Integer errorMessage = null;
         try {
-            ibmId = new IbmId(ibmIdInput.getText().toString());
+            ibmId =  new IbmId(ibmIdInput.getText().toString());
         } catch (Value.IncorrectValueException e) {
             errorMessage = R.string.error_incorrect_ibm_id;
             e.printStackTrace();

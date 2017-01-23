@@ -52,9 +52,11 @@
                     <!--android:paddingBottom="10dp"-->
 
                     <EditText
+                        android:id="@+id/input_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/input_hint_name" />
+                        android:hint="@string/input_hint_name"
+                        android:inputType="textPersonName" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -67,9 +69,11 @@
                 android:layout_marginTop="@dimen/activity_profile_content_vertical_margin">
 
                 <EditText
+                    android:id="@+id/input_location"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/input_hint_location" />
+                    android:hint="@string/input_hint_location"
+                    android:inputType="text" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -80,9 +84,11 @@
                 android:layout_marginTop="@dimen/activity_profile_content_vertical_margin">
 
                 <EditText
+                    android:id="@+id/input_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/input_hint_email" />
+                    android:hint="@string/input_hint_email"
+                    android:inputType="textEmailAddress" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -93,9 +99,11 @@
                 android:layout_marginTop="@dimen/activity_profile_content_vertical_margin">
 
                 <EditText
+                    android:id="@+id/input_phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/input_hint_phone" />
+                    android:hint="@string/input_hint_phone"
+                    android:inputType="phone" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -113,9 +121,11 @@
                 android:layout_marginTop="@dimen/activity_profile_content_vertical_margin">
 
                 <EditText
+                    android:id="@+id/input_interests"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/input_hint_interests" />
+                    android:hint="@string/input_hint_interests"
+                    android:inputType="none" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -126,13 +136,16 @@
                 android:layout_marginTop="@dimen/activity_profile_content_vertical_margin">
 
                 <EditText
+                    android:id="@+id/input_tags"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/input_hint_tags" />
+                    android:hint="@string/input_hint_tags"
+                    android:inputType="none" />
 
             </android.support.design.widget.TextInputLayout>
 
             <Button
+                android:id="@+id/button_save"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
