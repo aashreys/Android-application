@@ -1,17 +1,17 @@
-package com.example.vivian.capstone_test.domain;
+package com.example.vivian.capstone_test.domain.values;
 
 import android.support.annotation.NonNull;
 
 /**
- * Represents an IBM ID.
+ * Represents a password.
  * @see Value
  *
  * Created by aashreys on 20/01/17.
  */
 
-public class IbmId extends Value<String> {
+public class Password extends Value<String> {
 
-    public IbmId(@NonNull String value) throws IncorrectValueException {
+    public Password(@NonNull String value) throws IncorrectValueException {
         super(value);
     }
 
