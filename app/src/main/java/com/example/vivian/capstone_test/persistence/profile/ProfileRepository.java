@@ -23,15 +23,28 @@ import java.util.List;
 
 public class ProfileRepository {
 
-    public long save(Profile profile) {
-        ProfileModel model = new ProfileModel(profile);
-        model.save();
-        return model.id;
+    public Id insert(Profile profile) {
+        try {
+            ProfileModel model = new ProfileModel(profile);
+            model.insert();
+            return new Id(model.id);
+        } catch (Value.IncorrectValueException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
-    @Nullable
-    public Profile getThisProfile(ThisProfileIdRepository thisProfileIdRepository) {
-        return get(thisProfileIdRepository.get());
+    public boolean exists(Id profileId) {
+        ProfileModel model = SQLite.select()
+                .from(ProfileModel.class)
+                .where(ProfileModel_Table.id.eq(profileId.getValue()))
+                .querySingle();
+        return model != null;
+    }
+
+    public void update(Id id, Profile profile) {
+        ProfileModel model = new ProfileModel(id, profile);
+        model.update();
     }
 
     @Nullable

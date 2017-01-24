@@ -103,7 +103,7 @@ public class ProfileActivity extends AppCompatActivity {
     private Profile getThisProfile() {
         ThisProfileIdRepository thisProfileIdRepository = new ThisProfileIdRepository(this);
         ProfileRepository profileRepository = new ProfileRepository();
-        return profileRepository.getThisProfile(thisProfileIdRepository);
+        return profileRepository.get(thisProfileIdRepository.get());
     }
 
     private void saveProfile(
@@ -113,11 +113,13 @@ public class ProfileActivity extends AppCompatActivity {
         ThisProfileIdRepository thisProfileIdRepository = new ThisProfileIdRepository(this);
         ProfileRepository profileRepository = new ProfileRepository();
         Profile thisProfile = new Profile(name, phone, email, location, null, interests, tags);
-        long thisUserId = profileRepository.save(thisProfile);
-        try {
-            thisProfileIdRepository.save(new Id(thisUserId));
-        } catch (Value.IncorrectValueException e) {
-            e.printStackTrace();
+        if (thisProfileIdRepository.get() != null) {
+            // This profile already exists, update it
+            profileRepository.update(thisProfileIdRepository.get(), thisProfile);
+        } else {
+            // This profile does not exist, create a new one
+            Id thisProfileId = profileRepository.insert(thisProfile);
+            thisProfileIdRepository.update(thisProfileId);
         }
     }
 
