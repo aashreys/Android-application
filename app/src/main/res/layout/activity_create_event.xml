@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.vivian.capstone_test.CreateEventsActivity">
+    tools:context="com.example.vivian.capstone_test.CreateEventActivity">
 
     <include layout="@layout/button_bar" />
 
@@ -32,27 +32,19 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/activity_profile_content_vertical_margin"
-                android:gravity="center_vertical">
+                android:layout_marginBottom="@dimen/activity_profile_content_horizontal_margin">
 
-                <android.support.design.widget.TextInputLayout
+                <EditText
+                    android:id="@+id/input_event_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/activity_profile_content_horizontal_margin">
+                    android:hint="@string/input_hint_event_name"
+                    android:inputType="textPersonName" />
 
-                    <EditText
-                        android:id="@+id/input_event_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/input_hint_event_name"
-                        android:inputType="textPersonName" />
-
-                </android.support.design.widget.TextInputLayout>
-
-            </LinearLayout>
+            </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -117,6 +109,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/activity_create_event_radio_button_horizontal_spacing"
+                    android:checked="true"
                     android:text="@string/title_event_type_public" />
 
                 <RadioButton
@@ -154,11 +147,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/input_hint_notes"
-                    android:inputType="text" />
+                    android:inputType="textMultiLine" />
 
             </android.support.design.widget.TextInputLayout>
 
             <Button
+                android:id="@+id/button_save"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

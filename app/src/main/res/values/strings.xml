@@ -5,6 +5,7 @@
     <string name="login">Login</string>
 
     <string name="action_save">Save</string>
+    <string name="action_add">Add</string>
 
     <string name="input_hint_enter_ibm_id">Enter IBM ID</string>
     <string name="input_hint_enter_password">Enter Password</string>

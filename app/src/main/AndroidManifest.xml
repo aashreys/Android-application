@@ -20,7 +20,7 @@
         <activity android:name=".ProfileActivity"></activity>
         <activity android:name=".PingActivity"></activity>
         <activity
-            android:name=".CreateEventsActivity"
+            android:name=".CreateEventActivity"
             android:label="@string/title_activity_create_events"
             android:theme="@style/BlendTheme"></activity>
     </application>
