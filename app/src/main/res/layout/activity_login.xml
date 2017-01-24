@@ -81,11 +81,10 @@
             android:id="@+id/image_ibm_logo"
             android:layout_width="100dp"
             android:src="@drawable/logo_blue"
-            android:scaleType="fitEnd"
             android:layout_marginTop="23dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal= "true" />
+            android:layout_centerHorizontal= "true"
+            android:layout_alignParentBottom="true"/>
 
     </RelativeLayout>
 
