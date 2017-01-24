@@ -2,6 +2,10 @@ package com.example.vivian.capstone_test.persistence.profile;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.support.annotation.Nullable;
+
+import com.example.vivian.capstone_test.domain.values.Id;
+import com.example.vivian.capstone_test.domain.values.Value;
 
 /**
  * Created by aashreys on 23/01/17.
@@ -19,16 +23,18 @@ public class ThisProfileIdRepository {
         sharedPreferences = context.getSharedPreferences(NAME, Context.MODE_PRIVATE);
     }
 
-    public void save(long thisProfileId) {
-        sharedPreferences.edit().putLong(KEY_THIS_PROFILE_ID, thisProfileId).apply();
+    public void save(Id thisProfileId) {
+        sharedPreferences.edit().putLong(KEY_THIS_PROFILE_ID, thisProfileId.getValue()).apply();
     }
 
-    public long get() {
+    @Nullable
+    public Id get() {
         long id = sharedPreferences.getLong(KEY_THIS_PROFILE_ID, -1);
-        if (id >= 0) {
-            return id;
-        } else {
-            throw new IllegalArgumentException("Cannot find a valid id for this profile");
+        try {
+            return new Id(id);
+        } catch (Value.IncorrectValueException e) {
+            e.printStackTrace();
+            return null;
         }
     }
 

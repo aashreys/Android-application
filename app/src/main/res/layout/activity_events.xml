@@ -27,7 +27,8 @@
         android:layout_below="@+id/title_events"
         android:layout_marginLeft="@dimen/activity_content_margin_left"
         android:layout_marginRight="@dimen/activity_content_margin_right"
-        android:hint="@string/input_hint_search_events" />
+        android:hint="@string/input_hint_search_events"
+        android:inputType="text" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -36,7 +37,8 @@
         android:layout_below="@id/input_event_search"
         android:layout_marginBottom="16dp"
         android:layout_marginLeft="@dimen/activity_content_margin_left"
-        android:layout_marginRight="@dimen/activity_content_margin_right">
+        android:layout_marginRight="@dimen/activity_content_margin_right"
+        android:clipToPadding="false">
 
         <LinearLayout
             android:layout_width="match_parent"

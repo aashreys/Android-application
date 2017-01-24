@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.example.vivian.capstone_test.domain.entities.Profile;
 import com.example.vivian.capstone_test.domain.values.Email;
+import com.example.vivian.capstone_test.domain.values.Id;
 import com.example.vivian.capstone_test.domain.values.Interest;
 import com.example.vivian.capstone_test.domain.values.Location;
 import com.example.vivian.capstone_test.domain.values.Name;
@@ -113,7 +114,11 @@ public class ProfileActivity extends AppCompatActivity {
         ProfileRepository profileRepository = new ProfileRepository();
         Profile thisProfile = new Profile(name, phone, email, location, null, interests, tags);
         long thisUserId = profileRepository.save(thisProfile);
-        thisProfileIdRepository.save(thisUserId);
+        try {
+            thisProfileIdRepository.save(new Id(thisUserId));
+        } catch (Value.IncorrectValueException e) {
+            e.printStackTrace();
+        }
     }
 
 }
