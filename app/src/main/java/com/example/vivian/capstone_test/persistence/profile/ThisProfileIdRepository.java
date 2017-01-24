@@ -23,7 +23,7 @@ public class ThisProfileIdRepository {
         sharedPreferences = context.getSharedPreferences(NAME, Context.MODE_PRIVATE);
     }
 
-    public void save(Id thisProfileId) {
+    public void update(Id thisProfileId) {
         sharedPreferences.edit().putLong(KEY_THIS_PROFILE_ID, thisProfileId.getValue()).apply();
     }
 

@@ -4,6 +4,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
 import com.example.vivian.capstone_test.domain.entities.Profile;
+import com.example.vivian.capstone_test.domain.values.Id;
 import com.example.vivian.capstone_test.persistence.BlendDatabase;
 import com.raizlabs.android.dbflow.annotation.Column;
 import com.raizlabs.android.dbflow.annotation.PrimaryKey;
@@ -62,6 +63,11 @@ public class ProfileModel extends BaseModel {
         if (profile.getTags() != null) {
             this.tags = com.example.vivian.capstone_test.Utils.collectionToCsv(profile.getTags());
         }
+    }
+
+    ProfileModel(Id id, Profile profile) {
+        this(profile);
+        this.id = id.getValue();
     }
 
     @Nullable
