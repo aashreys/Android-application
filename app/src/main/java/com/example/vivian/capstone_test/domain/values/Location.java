@@ -6,7 +6,7 @@ import android.support.annotation.NonNull;
  * Created by aashreys on 23/01/17.
  */
 
-public class Location extends Value<String> {
+public class Location extends StringValue {
 
     public Location(@NonNull String value) throws IncorrectValueException {
         super(value);

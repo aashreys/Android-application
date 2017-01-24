@@ -6,9 +6,10 @@ import android.support.annotation.NonNull;
  * Created by aashreys on 23/01/17.
  */
 
-public class Email extends Value<String> {
+public class Email extends StringValue {
 
     public Email(@NonNull String value) throws IncorrectValueException {
         super(value);
     }
+
 }

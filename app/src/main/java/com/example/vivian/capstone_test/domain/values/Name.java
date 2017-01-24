@@ -6,7 +6,7 @@ import android.support.annotation.NonNull;
  * Created by aashreys on 23/01/17.
  */
 
-public class Name extends Value<String> {
+public class Name extends StringValue {
 
     public Name(@NonNull String value) throws IncorrectValueException {
         super(value);
