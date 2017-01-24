@@ -4,6 +4,7 @@ import android.support.annotation.Nullable;
 
 import com.example.vivian.capstone_test.domain.entities.Profile;
 import com.example.vivian.capstone_test.domain.values.Email;
+import com.example.vivian.capstone_test.domain.values.Id;
 import com.example.vivian.capstone_test.domain.values.ImagePath;
 import com.example.vivian.capstone_test.domain.values.Interest;
 import com.example.vivian.capstone_test.domain.values.Location;
@@ -34,13 +35,17 @@ public class ProfileRepository {
     }
 
     @Nullable
-    public Profile get(long id) {
-        ProfileModel model = SQLite.select()
-                .from(ProfileModel.class)
-                .where(ProfileModel_Table.id.eq(id))
-                .querySingle();
-        if (model != null) {
-            return _createProfileFromModel(model);
+    public Profile get(Id id) {
+        if (id != null) {
+            ProfileModel model = SQLite.select()
+                    .from(ProfileModel.class)
+                    .where(ProfileModel_Table.id.eq(id.getValue()))
+                    .querySingle();
+            if (model != null) {
+                return _createProfileFromModel(model);
+            } else {
+                return null;
+            }
         } else {
             return null;
         }
