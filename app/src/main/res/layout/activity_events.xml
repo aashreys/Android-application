@@ -9,6 +9,15 @@
 
     <include layout="@layout/button_bar" />
 
+    <Button
+        android:id="@+id/button_add_event"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="@string/action_add"
+        android:layout_marginLeft="@dimen/activity_content_margin_left"
+        android:layout_marginTop="@dimen/activity_page_heading_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
     <TextView
         android:id="@+id/title_events"
         style="@style/BlendTheme.PageHeading"

@@ -10,7 +10,6 @@
 
     <!-- Profile activity dimensions -->
     <dimen name="activity_profile_photo_frame_size">72dp</dimen>
-
     <dimen name="activity_profile_content_horizontal_margin">8dp</dimen>
     <dimen name="activity_profile_content_vertical_margin">8dp</dimen>
 
@@ -22,6 +21,9 @@
 
     <!-- Create Event activity dimensions -->
     <dimen name="activity_create_event_radio_button_horizontal_spacing">8dp</dimen>
+
+    <!-- Events activity dimensions -->
+    <dimen name="activity_event_add_event_button_size">48dp</dimen>
 
     <!-- Button bar dimensions -->
     <dimen name="button_bar_vertical_spacing">8dp</dimen>

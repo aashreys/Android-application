@@ -22,12 +22,12 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
-public class CreateEventsActivity extends AppCompatActivity {
+public class CreateEventActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_events);
+        setContentView(R.layout.activity_create_event);
         Utils.configureButtonBar(this);
 
         final EditText eventNameInput, dateTimeInput, eventLocationInput, inviteesInput, tagsInput,
@@ -44,7 +44,6 @@ public class CreateEventsActivity extends AppCompatActivity {
 
         publicRadioButton = (RadioButton) findViewById(R.id.radio_button_public);
         privateRadioButton = (RadioButton) findViewById(R.id.radio_button_private);
-        publicRadioButton.setSelected(true);
 
         saveButton = (Button) findViewById(R.id.button_save);
 
@@ -88,7 +87,7 @@ public class CreateEventsActivity extends AppCompatActivity {
                     );
                 } catch (Value.IncorrectValueException e) {
                     Toast.makeText(
-                            CreateEventsActivity.this,
+                            CreateEventActivity.this,
                             "Unable to create event",
                             Toast.LENGTH_SHORT
                     ).show();
